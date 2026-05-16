@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --background: #f4f6f3;
+  --foreground: #182333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family:
+    Aptos, "Segoe UI", ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input,
+select,
+button {
+  font: inherit;
+}
+
+.prose-site {
+  color: #33465a;
+}
+
+.prose-site p {
+  margin-top: 0.85rem;
+  line-height: 1.75;
+}
+
+.prose-site ul {
+  margin: 0.85rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.prose-site li {
+  margin-top: 0.45rem;
+  line-height: 1.65;
+}
+
+.focus-ring {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.focus-ring:focus-visible {
+  outline-color: #0f766e;
+}
